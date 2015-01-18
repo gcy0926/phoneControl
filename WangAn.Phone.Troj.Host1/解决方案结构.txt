@@ -1,0 +1,76 @@
+解决方案结构
+
+-WangAn.Phone.Troj.Host.sln  木马主控程序解决方案文件
++InOut 木马主程序协定类库,用于与手机设备进行通讯，数据命令交换
+--InOut.csproj 项目文件
+--Protocol.cs 协议声明文件
+--IPacket.cs 数据包接口
+--IController.cs 数据接收接口
+--Connection.cs SOCKET 连接类
+--Sender.cs 数据发送类
+--Receiver.cs 数据接收类
+--Demux.cs 命令接收类
+--Mux.cs 命令发送类
+-+Entity 数据传送实体
+---Conact.cs 通迅录信息实体类
+---MyFile.cs 文件实体类
+--PacketImp 数据包声明类
+---AdvancedInformationPacket.cs 设置信息数据类
+---CallLogPacket.cs 通话日志类
+---CallPacket.cs 电话拨打类
+---CallStatusPacket.cs 电话状态监听类
+---CommandPacket.cs 通用命令类
+---ContactsPacket.cs 通讯录类
+---FilePacket.cs 文件类
+---FileTreePacket.cs 文件树信息类
+---LogPacket.cs 日志信息类
+---RawPacket.cs 原始二进制数据类
+---ShortSMSPacket.cs 短消息类
+---SMSPacket.cs 短信类
+---TransportPacket.cs 原始通讯类
+
++WangAn.Phone.Troj.Host
+--AboutFrm.cs 关于窗口界面
+--App.config 项目配置文件
+--Config.cs 配置类
+--IConfig.cs 配置接口
+--ILog.cs 日志接口
+--IMainView.cs 主界面接口
+--IServer.cs 主控服务接口
+--Log.cs 日志类
+--MainFrm.cs 主窗体类
+--Program.cs 应用程序入口类
+--Server.cs 主控服务类
+--TrojInstallFrm.cs 木马应用安装界面
+--UserOptionFrm.cs 用户操作界面
+-+Handler 木马应用响应命令的回调函数类
+---AdvInfoHandler.cs 设备信息回调
+---CallLogHandler.cs 日志回调
+---CallMonitorHandler.cs 电话监听回调
+---ChannelDistributionHandler.cs 命令通信通道回调
+---ClientHandler.cs 客户端回调
+---ClientLogHandler.cs 客户端日志回调
+---CommandHandler.cs 命令回调
+---ContactsHandler.cs 通迅日志回调
+---FileHandler.cs 文件回调
+---FileTreeHandler.cs 文件树回调
+---IPacketHandler.cs 数据包回调接口
+---PictureHandler.cs 图片回调
+---SMSHandler.cs 短信回调
+---SMSMonitorHandler.cs 短信监听回调
+---SoundHandler.cs 声音回调
+---TemporaryStorage.cs 数据存储介质类
+---VideoHandler.cs 视频回调
+-+Model
+UserInfo.cs 用户信息实体
+-+Panel
+---CallMonitorPanel.cs 电话监听组件
+---CallPhoneFrm.cs 电话拨打界面
+---ReadCallLogPanel.cs 通话日志界面
+---ReadContractsPanel.cs 通话记录组件
+---ReadFilePanel.cs 文件读取界面组件
+---ReadSmsPanel.cs 短信界面组件
+---SendMessageFrm.cs 消息发送界面
+---SendSmsFrm.cs 短信发送界面
+---TakePhotoPanel.cs 拍照界面
++InOutTest 木马主程序协定类库单元测试

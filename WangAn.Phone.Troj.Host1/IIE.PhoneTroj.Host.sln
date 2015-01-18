@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InOut", "InOut\InOut.csproj", "{6C1895D0-BEF2-4A33-A9B0-B6E62CF328CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InOutTest", "InOutTest\InOutTest.csproj", "{289B61FB-7F6A-41CE-9DD5-5A251343CAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIE.Phone.Troj.Host", "WangAn.Phone.Troj.Host\IIE.Phone.Troj.Host.csproj", "{D4BB3C35-924A-4609-B5D1-1C3334DE159B}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{B76B9643-EC14-4D20-8875-149EDCEA04E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1895D0-BEF2-4A33-A9B0-B6E62CF328CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1895D0-BEF2-4A33-A9B0-B6E62CF328CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1895D0-BEF2-4A33-A9B0-B6E62CF328CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1895D0-BEF2-4A33-A9B0-B6E62CF328CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{289B61FB-7F6A-41CE-9DD5-5A251343CAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289B61FB-7F6A-41CE-9DD5-5A251343CAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289B61FB-7F6A-41CE-9DD5-5A251343CAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289B61FB-7F6A-41CE-9DD5-5A251343CAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4BB3C35-924A-4609-B5D1-1C3334DE159B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4BB3C35-924A-4609-B5D1-1C3334DE159B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4BB3C35-924A-4609-B5D1-1C3334DE159B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4BB3C35-924A-4609-B5D1-1C3334DE159B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76B9643-EC14-4D20-8875-149EDCEA04E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76B9643-EC14-4D20-8875-149EDCEA04E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76B9643-EC14-4D20-8875-149EDCEA04E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76B9643-EC14-4D20-8875-149EDCEA04E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

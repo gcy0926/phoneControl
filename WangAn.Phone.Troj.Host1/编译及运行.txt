@@ -1,0 +1,9 @@
+编译及运行
+
+1、编译
+IDE:VS2012
+Dotnetframework 4.5
+
+2、运行
+Win7 及以上
+DotnetFrameowrk 4.5

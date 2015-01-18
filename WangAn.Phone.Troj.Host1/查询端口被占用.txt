@@ -1,0 +1,14 @@
+netstat -aon|findstr "13550"
+
+netstat -aon查看所有进程
+
+tasklist 查看进程列表
+
+tasklist|findstr "3112" 查看进程号
+
+taskkill /f /t /im tor.exe  杀死进程
+
+taskkill /pid 2552 -f  杀死进程
+
+
+

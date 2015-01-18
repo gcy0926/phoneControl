@@ -1,0 +1,29 @@
+c:\users\woebird\documents\visual studio 2012\Projects\InOut\InOut\bin\Debug\InOut.dll
+c:\users\woebird\documents\visual studio 2012\Projects\InOut\InOut\bin\Debug\InOut.pdb
+c:\users\woebird\documents\visual studio 2012\Projects\InOut\InOut\obj\Debug\InOut.dll
+c:\users\woebird\documents\visual studio 2012\Projects\InOut\InOut\obj\Debug\InOut.pdb
+F:\SVN\Terminal\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.dll
+F:\SVN\Terminal\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.pdb
+F:\SVN\Terminal\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.csprojResolveAssemblyReference.cache
+F:\SVN\Terminal\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.dll
+F:\SVN\Terminal\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.pdb
+D:\荆鹏飞\手机杀毒软件测试\演示木马应用及主控程序源代码\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.dll
+D:\荆鹏飞\手机杀毒软件测试\演示木马应用及主控程序源代码\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.pdb
+D:\荆鹏飞\手机杀毒软件测试\演示木马应用及主控程序源代码\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.csprojResolveAssemblyReference.cache
+D:\荆鹏飞\手机杀毒软件测试\演示木马应用及主控程序源代码\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.dll
+D:\荆鹏飞\手机杀毒软件测试\演示木马应用及主控程序源代码\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.pdb
+E:\工作\C#木马\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.dll
+E:\工作\C#木马\WangAn.Phone.Troj.Host\InOut\bin\Debug\InOut.pdb
+E:\工作\C#木马\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.csprojResolveAssemblyReference.cache
+E:\工作\C#木马\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.dll
+E:\工作\C#木马\WangAn.Phone.Troj.Host\InOut\obj\Debug\InOut.pdb
+D:\荆鹏飞\手机杀毒软件测试\WangAn.Phone.Troj.Host1\InOut\bin\Debug\InOut.dll
+D:\荆鹏飞\手机杀毒软件测试\WangAn.Phone.Troj.Host1\InOut\bin\Debug\InOut.pdb
+D:\荆鹏飞\手机杀毒软件测试\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.csprojResolveAssemblyReference.cache
+D:\荆鹏飞\手机杀毒软件测试\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.dll
+D:\荆鹏飞\手机杀毒软件测试\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.pdb
+E:\工作\C#木马\0118\WangAn.Phone.Troj.Host1\InOut\bin\Debug\InOut.dll
+E:\工作\C#木马\0118\WangAn.Phone.Troj.Host1\InOut\bin\Debug\InOut.pdb
+E:\工作\C#木马\0118\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.csprojResolveAssemblyReference.cache
+E:\工作\C#木马\0118\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.dll
+E:\工作\C#木马\0118\WangAn.Phone.Troj.Host1\InOut\obj\Debug\InOut.pdb
